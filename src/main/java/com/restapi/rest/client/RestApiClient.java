@@ -34,6 +34,8 @@ public class RestApiClient {
 			System.out.println("Error");
 		}
 		System.out.println(postResponse.readEntity(Message.class).getMessege());
+		
+		client.close();
 	}
 	
 }
